@@ -9,11 +9,9 @@ export default function DefaultPage() {
                 <img src="src/assets/logo.svg" alt="Logo" className="w-280 h-auto object-cover rounded-lg" />
                 <H1>Få din virksomhed til at blomstre online</H1>
                 <div>
-                <CTA />
+                    <CTA />
+                </div>
             </div>
-            </div>
-
-            <h1>test github</h1>
             
         </main>
     )
