@@ -1,26 +1,26 @@
 import CTA from "./CTA"
-import H3 from "./typography/H3"
+import H4 from "./typography/H4"
 
 export default function Form() {
     return (
-        <div className="flex flex-col gap-6 bg-secondary rounded-4xl p-10 w-6/7 mx-auto my-16">
+        <div className="flex flex-col gap-4 bg-primary rounded-4xl p-5 m-1 w-full">
             
             {/* Row 1 - Navn & Email */}
             <div className="flex flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
-                    <H3>Navn</H3>
+                    <H4>Navn</H4>
                     <input
                         type="text"
                         placeholder="Dit fulde navn"
-                        className="rounded-full px-6 py-3 bg-text text-secondary placeholder-secondary/50 w-full"
+                        className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
-                    <H3>Email</H3>
+                    <H4>Email</H4>
                     <input
                         type="email"
                         placeholder="navn@eksempel.dk"
-                        className="rounded-full px-6 py-3 bg-text text-secondary placeholder-secondary/50 w-full"
+                        className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
             </div>
@@ -28,20 +28,22 @@ export default function Form() {
             {/* Row 2 - Telefon & Pakke */}
             <div className="flex flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
-                    <H3>Telefon nummer</H3>
+                    <H4>Telefon nummer</H4>
                     <input
                         type="tel"
                         placeholder="00 00 00 00"
-                        className="rounded-full px-6 py-3 bg-text text-secondary placeholder-secondary/50 w-full"
+                        className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
-                    <H3>Pakke</H3>
+                    <H4>Pakke</H4>
                     <div className="relative w-full">
-                        <select className="rounded-full px-6 py-3 bg-text text-secondary w-full appearance-none cursor-pointer">
+                        <select className="rounded-full px-6 py-1 bg-text text-secondary w-full appearance-none cursor-pointer">
                             <option value="">Vælg pakke</option>
                             <option value="spiren">Spiren</option>
+                            <option value="opblomstring">Opblomstring</option>
                             <option value="eviggroen">Eviggrøn</option>
+                            <option value="form og flor">Form og Flor</option>
                         </select>
                         <span className="absolute right-5 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">▼</span>
                     </div>
@@ -50,10 +52,10 @@ export default function Form() {
 
             {/* Row 3 - Anden information */}
             <div className="flex flex-col gap-2 w-full">
-                <H3>Anden information</H3>
+                <H4>Anden information</H4>
                 <textarea
                     placeholder="Noget vi skal vide?"
-                    className="rounded-2xl px-6 py-4 bg-text text-secondary placeholder-secondary/50 w-full h-40 resize-none"
+                    className="rounded-2xl px-6 py-2 bg-text text-secondary placeholder-secondary/50 w-full h-40 resize-none"
                 />
             </div>
 
