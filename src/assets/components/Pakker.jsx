@@ -3,7 +3,7 @@ import P from "./typography/P";
 
 function Frame({ badge }) {
   return (
-    <div className="absolute h-9 left-0.5 overflow-clip top-0.5 w-74.75" style={{ backgroundImage: "linear-gradient(93.4451deg, rgba(103, 6, 39, 0.7) 40.12%, rgba(113, 18, 36, 0.7) 100%)", color: "var(--color-text)" }}>
+    <div className="absolute h-9 left-0.5 overflow-clip top-0.5 w-full" style={{ backgroundImage: "linear-gradient(93.4451deg, rgba(103, 6, 39, 0.7) 40.12%, rgba(113, 18, 36, 0.7) 100%)", color: "var(--color-text)" }}>
       <p className="absolute font-['Arial:Regular',sans-serif] leading-[normal] left-1.25 not-italic text-[24px] top-1 whitespace-nowrap">{badge}</p>
     </div>
   );
