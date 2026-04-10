@@ -16,7 +16,7 @@ export default function Kontakt() {
                     
                     {/* Centered heading */}
                     <div className="text-center">
-                        <H2>Interesseret i en snak? Kontakt os!</H2>
+                        <H2>Interesseret i en uforpligtende snak? Kontakt os!</H2>
                     </div>
 
                     {/* Form + illustration side by side */}

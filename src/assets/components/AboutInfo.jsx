@@ -11,7 +11,7 @@ const teamMembers = [
 const bubbles = [
     { text: '0,8 g co2 pr side visning' },
     { text: 'Tværfagligt team' },
-    { text: 'Værdier: design med omtanke for både brugeren og klimaet' },
+    { text: 'Værdier: Design med omtanke for både brugeren og klimaet' },
     { text: 'Mission: Langsigtede løsninger' },
 ]
 export default function AboutInfo() {

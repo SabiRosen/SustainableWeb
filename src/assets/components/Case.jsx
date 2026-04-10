@@ -4,12 +4,16 @@ import CTA from "./CTA"
 
 export default function Case({ caseData, flipped = false }) {
     return (
-        <div className="p-2 rounded-tr-[4.375rem] rounded-bl-[4.375rem] w-full" 
+        <div className="p-2 rounded-tr-[4.375rem] rounded-bl-[4.375rem] w-full " 
             style={{ background: `linear-gradient(to ${flipped ? 'left' : 'right'}, #FFF2B1, transparent)` }}>
             
-            <div className={`flex ${flipped ? 'flex-row-reverse' : 'flex-row'} items-center gap-8 bg-secondary rounded-tr-[4.375rem] rounded-bl-[4.375rem] py-8 px-16 w-full`}>
+                <div className={`flex 
+                    ${flipped 
+                        ? 'flex-col-reverse md:flex-row-reverse' 
+                        : 'flex-col md:flex-row'} 
+                        items-center gap-8 bg-secondary rounded-tr-[4.375rem] rounded-bl-[4.375rem] py-8 px-16 w-full`}>
                 
-                <div className="flex items-center gap-4 shrink-0">
+                <div className="flex items-center gap-4 shrink-0 ">
                     <h1 className="text-9xl color-text" style={{ fontFamily: "'Unbounded', sans-serif", color: "var(--color-text)" }}> {/* Stilen her er underlig */}
                         {caseData.id}.
                     </h1>

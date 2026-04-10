@@ -8,15 +8,18 @@ export default function Fordele({ fordele }) {
     return (
         <div className="flex flex-col items-center gap-10 w-full mt-8">
             <H2>Fordele</H2>
-            <div className="flex flex-row justify-center gap-30 w-full">
+            <div 
+                className="flex flex-row justify-center w-full"
+                style={{ gap: 'clamp(1.5rem, 8vw, 7.5rem)' }}
+            >
                 {fordele.map((fordel, index) => (
-                    <div key={index} className="flex flex-col items-center gap-5">
+                    <div key={index} className="flex flex-col items-center gap-4">
                         <img 
                             src={fordel.icon} 
                             alt={fordel.label} 
-                            className="w-43.75 h-43.75"
+                            style={{ width: 'clamp(90px, 15vw, 175px)', height: 'clamp(90px, 15vw, 175px)' }}
                         />
-                        <P className="w-60 text-center">{fordel.label}</P>
+                        <P className="text-center">{fordel.label}</P>
                     </div>
                 ))}
             </div>
