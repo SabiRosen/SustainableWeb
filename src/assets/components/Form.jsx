@@ -10,16 +10,22 @@ export default function Form() {
                 <div className="flex flex-col gap-2 w-full">
                     <H4>Navn</H4>
                     <input
+                        id="navn"
+                        name="navn"
                         type="text"
                         placeholder="Dit fulde navn"
+                        autoComplete="name"
                         className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
                     <H4>Email</H4>
                     <input
+                        id="email"
+                        name="email"
                         type="email"
                         placeholder="navn@eksempel.dk"
+                        autoComplete="email"
                         className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
@@ -30,15 +36,18 @@ export default function Form() {
                 <div className="flex flex-col gap-2 w-full">
                     <H4>Telefon nummer</H4>
                     <input
+                        id="telefon"
+                        name="telefon"
                         type="tel"
                         placeholder="00 00 00 00"
+                        autoComplete="tel"
                         className="rounded-full px-6 py-1 bg-text text-secondary placeholder-secondary/50 w-full"
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
                     <H4>Pakke</H4>
                     <div className="relative w-full">
-                        <select className="rounded-full px-6 py-1 bg-text text-secondary w-full appearance-none cursor-pointer">
+                        <select id="pakke" name="pakke" autoComplete="off" className="rounded-full px-6 py-1 bg-text text-secondary w-full appearance-none cursor-pointer">
                             <option value="">Vælg pakke</option>
                             <option value="spiren">Spiren</option>
                             <option value="opblomstring">Opblomstring</option>
@@ -54,9 +63,11 @@ export default function Form() {
             <div className="flex flex-col gap-2 w-full">
                 <H4>Anden information</H4>
                 <textarea
+                    id="information"
+                    name="information"
+                    autoComplete="off"
                     placeholder="Noget vi skal vide?"
-                    className="rounded-2xl px-6 py-2 bg-text text-secondary placeholder-secondary/50 w-full h-40 resize-none"
-                />
+                    className="rounded-2xl px-6 py-2 bg-text text-secondary placeholder-secondary/50 w-full h-40 resize-none"/>
             </div>
 
             {/* Send button */}
