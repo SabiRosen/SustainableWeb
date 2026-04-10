@@ -1,6 +1,7 @@
-import H3 from "./typography/H3"
+
 import P from "./typography/P"
 import CTA from "./CTA"
+import H2 from "./typography/H2"
 
 export default function Case({ caseData, flipped = false }) {
     return (
@@ -23,7 +24,7 @@ export default function Case({ caseData, flipped = false }) {
                 </div>
                 
                 <div className="flex flex-col gap-4">
-                    <H3>{caseData.name}</H3>
+                    <H2>{caseData.name}</H2>
                     <P>{caseData.description}</P>
                     <P>Pakke: {caseData.pakke}</P>
                     <div className="self-start mt-6">
