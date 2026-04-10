@@ -1,6 +1,6 @@
 // src/assets/components/Milestones.jsx
-import H1 from './typography/H1'
-import H4 from './typography/H4'
+import H2 from './typography/H2'
+import H3 from './typography/H3'
 import P from './typography/P'
 
 const milestones = [
@@ -20,14 +20,14 @@ const milestones = [
 
 export default function Milestones() {
     return (
-        <div className="flex flex-col items-center gap-16 w-6/7 mx-auto my-16">
+        <div className="flex flex-col items-center gap-8 md:gap-16 w-11/12 md:w-6/7 mx-auto my-16">
             
-            <H1>Milepæle</H1>
+            <H2>Milepæle</H2>
 
-            <div className="flex flex-row gap-8 w-full">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 w-full">
                 {milestones.map((milestone, index) => (
-                    <div key={index} className="flex flex-col gap-6 bg-primary border-4 border-secondary rounded-tr-[4.375rem] rounded-bl-[4.375rem] p-10 flex-1">
-                        <H4>{milestone.title}</H4>
+                    <div key={index} className="flex flex-col gap-6 bg-primary border-4 border-secondary rounded-tr-[4.375rem] rounded-bl-[4.375rem] p-6 md:p-10 flex-1">
+                        <H3>{milestone.title}</H3>
                         {milestone.bullets && (
                             <ul className="flex flex-col gap-3">
                                 {milestone.bullets.map((bullet, i) => (

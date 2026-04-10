@@ -3,6 +3,7 @@ import H2 from "./typography/H2"
 import H3 from "./typography/H3"
 import P from "./typography/P"
 import CTA from "./CTA"
+import { Link } from "react-router-dom"
 
 export default function PackageInfo({ package: pkg }) {
     if (!pkg) return (
@@ -19,7 +20,10 @@ export default function PackageInfo({ package: pkg }) {
             <H3>Pris fra {pkg.price}</H3>
 
             <div className="self-start mt-auto">
-                <CTA />
+                <Link to="/kontakt">
+                    <CTA />
+                </Link>
+                
             </div>
         </div>
     )

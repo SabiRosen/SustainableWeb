@@ -14,7 +14,7 @@ export default function Focus() {
 
       {/* Greenhosting */}
       <div className="flex flex-col md:flex-row items-center w-full gap-[clamp(1rem, 4vw, 2.5rem)] py-[clamp(1rem, 4vw, 2.5rem)]">
-        <Player autoplay loop src={greenhostingAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} />
+        <Player autoplay loop src={greenhostingAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} loading="lazy"/>
         <div className="flex flex-col gap-4 flex-1">
           <H2>Greenhosting</H2>
           <P>Vi hoster din hjemmeside på servere drevet af vedvarende energi. Det reducerer CO₂-aftrykket uden at gå på kompromis med stabilitet og drift.</P>
@@ -23,7 +23,7 @@ export default function Focus() {
 
       {/* Performance */}
       <div className="flex flex-col md:flex-row-reverse items-center w-full gap-[clamp(1rem, 4vw, 2.5rem)] py-[clamp(1rem, 4vw, 2.5rem)]">
-        <Player autoplay loop src={performanceAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} />
+        <Player autoplay loop src={performanceAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} loading="lazy" />
         <div className="flex flex-col gap-4 flex-1">
           <H2>Performance</H2>
           <P>Vi optimerer din hjemmeside, så den loader hurtigt og kører effektivt. Det giver en bedre brugeroplevelse og et lavere energiforbrug.</P>
@@ -32,7 +32,7 @@ export default function Focus() {
 
       {/* SEO */}
       <div className="flex flex-col md:flex-row items-center w-full gap-[clamp(1rem, 4vw, 2.5rem)] py-[clamp(1rem, 4vw, 2.5rem)]">
-        <Player autoplay loop src={seoAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} />
+        <Player autoplay loop src={seoAnimation} style={{ width: 'clamp(150px, 25vw, 300px)', height: 'clamp(150px, 25vw, 300px)', flexShrink: 0 }} loading="lazy" />
         <div className="flex flex-col gap-4 flex-1">
           <H2>SEO</H2>
           <P>Vi sikrer, at din hjemmeside er bygget til at blive fundet. God struktur og optimeret indhold hjælper dig med at nå dine kunder.</P>

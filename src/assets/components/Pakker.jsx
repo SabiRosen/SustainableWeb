@@ -1,5 +1,5 @@
 
-import H3 from "./typography/H3";
+import H2 from "./typography/H2";
 import P from "./typography/P";
 
 function Frame({ badge }) {
@@ -15,14 +15,14 @@ function Spiren({ onClick, isSelected }) {
     <div 
       onClick={onClick}
       style={{ width: 'clamp(150px, 20vw, 350px)', height: 'clamp(150px, 20vw, 350px)' }}
-      className="bg-linear-to-b from-primary relative rounded-bl-[100px] rounded-tr-[100px] shrink-0 to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
+      className="bg-linear-to-b from-primary relative rounded-bl-[80px] rounded-tr-[80px] shrink-0 to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
       data-name="Spiren">
       <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col items-center justify-center gap-2">
-        <H3>Spiren</H3>
+        <H2>Spiren</H2>
         <P className="text-center px-4">Hjemmeside fra bunden</P>
         <Frame badge="Populært"/>
       </div>
-      <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[100px] rounded-tr-[100px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
+      <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[80px] rounded-tr-[80px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
     </div>
   );
 }
@@ -33,15 +33,15 @@ function Opblomstring({ onClick, isSelected }) {
     <div 
       onClick={onClick}
       style={{ width: 'clamp(150px, 20vw, 350px)', height: 'clamp(150px, 20vw, 350px)' }}
-      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[100px] rounded-tr-[100px] to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
+      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[80px] rounded-tr-[80px] to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
       data-name="Opblomstring">
       <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col items-center justify-center gap-2">
         <div className="-scale-y-100 rotate-180 flex flex-col items-center gap-2">
-          <H3 className="text-center">Opblomstring</H3>
+          <H2 className="text-center">Opblomstring</H2>
           <P className="text-center px-4">Opdateret design - nyt liv</P>
         </div>
       </div>
-      <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[100px] rounded-tr-[100px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
+      <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[80px] rounded-tr-[80px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
     </div>
   );
 }
@@ -51,17 +51,17 @@ function Eviggron({ onClick, isSelected }) {
     <div 
       onClick={onClick}
       style={{ width: 'clamp(150px, 20vw, 350px)', height: 'clamp(150px, 20vw, 350px)' }}
-      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[100px] rounded-tr-[100px] shrink-0 to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
+      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[80px] rounded-tr-[80px] shrink-0 to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
       data-name="Eviggrøn">
       <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col items-center justify-center gap-2">
-        <H3>Eviggrøn</H3>
+        <H2>Eviggrøn</H2>
         <div className="text-center px-4">
           <P>Optimering med</P>
           <P>bæredygtigt fokus</P>
         </div>
         <Frame badge="Anbefalet"/>
       </div>
-    <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[100px] rounded-tr-[100px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
+    <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[80px] rounded-tr-[80px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
     </div>
   );
 }
@@ -71,15 +71,15 @@ function FormOgFlor({ onClick, isSelected }) {
     <div 
       onClick={onClick}
       style={{ width: 'clamp(150px, 20vw, 350px)', height: 'clamp(150px, 20vw, 350px)' }}
-      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[100px] rounded-tr-[100px] to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
+      className="bg-linear-to-b from-primary overflow-clip relative rounded-bl-[80px] rounded-tr-[80px] to-[#ffb300] cursor-pointer transition-transform hover:scale-105 active:scale-95" 
       data-name="Form og flor">
       <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col items-center justify-center gap-2">
         <div className="-scale-y-100 rotate-180 flex flex-col items-center gap-2">
-          <H3 className="text-center">Form og flor</H3>
+          <H2 className="text-center">Form og flor</H2>
           <P className="text-center px-4">Opstrammet visuel identitet</P>
         </div>
       </div>
-    <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[100px] rounded-tr-[100px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
+    <div aria-hidden="true" className={`absolute border-solid inset-0 pointer-events-none rounded-bl-[80px] rounded-tr-[80px] ${isSelected ? "border-4 border-text" : "border-none"}`} />
     </div>
   );
 }

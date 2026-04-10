@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import H1 from "./typography/H1"
 import P from "./typography/P"
 import CTA from "./CTA"
+import { Link } from "react-router-dom"
 
 export default function VisionCasesSection() {
     const navigate = useNavigate()
@@ -17,7 +18,10 @@ export default function VisionCasesSection() {
                 <P>Vores mål er at levere løsninger, der ikke bare ser godt ud, men også reelt skaber værdi og vækst. Samtidig tænker vi langsigtet i alt, hvad vi laver.</P>
                 <P>Fra effektive, lette løsninger til ansvarlige valg i vores digitale arbejde, så både vores kunder og omgivelserne får mest muligt ud af det.</P>
                 <div className="place-self-center mt-auto">
-                    <CTA label="OM OS" onClick={() => navigate('/omos')} />
+                    <Link to="OmOS">
+                        <CTA label="OM OS" />
+                    </Link>
+                    
                 </div>
             </div>
 
@@ -33,12 +37,16 @@ export default function VisionCasesSection() {
                     ].map((img, index) => (
                         <div key={index} className="rounded-full border border-text overflow-hidden"
                             style={{ width: 'clamp(100px, 18vw, 175px)', height: 'clamp(100px, 18vw, 175px)' }}>
-                            <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
+                            <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy"/>
                         </div>
                     ))}
                 </div>
+        
                 <div className="place-self-center mt-auto">
-                    <CTA label="SE FLERE" onClick={() => navigate('/cases')} />
+                    <Link to="/Cases">
+                        <CTA label="SE FLERE"/>
+                    </Link>
+                    
                 </div>
             </div>
 

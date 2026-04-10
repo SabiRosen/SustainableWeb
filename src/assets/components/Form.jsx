@@ -1,5 +1,5 @@
 import CTA from "./CTA"
-import H4 from "./typography/H4"
+import H3 from "./typography/H3"
 
 export default function Form() {
     return (
@@ -8,7 +8,7 @@ export default function Form() {
             {/* Row 1 - Navn & Email */}
             <div className="flex flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
-                    <H4>Navn</H4>
+                    <H3>Navn</H3>
                     <input
                         id="navn"
                         name="navn"
@@ -19,7 +19,7 @@ export default function Form() {
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
-                    <H4>Email</H4>
+                    <H3>Email</H3>
                     <input
                         id="email"
                         name="email"
@@ -34,7 +34,7 @@ export default function Form() {
             {/* Row 2 - Telefon & Pakke */}
             <div className="flex flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
-                    <H4>Telefon nummer</H4>
+                    <H3>Telefon nummer</H3>
                     <input
                         id="telefon"
                         name="telefon"
@@ -45,7 +45,9 @@ export default function Form() {
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full">
-                    <H4>Pakke</H4>
+                    <label htmlFor="pakke">
+                        <H3>Pakke</H3>
+                    </label>
                     <div className="relative w-full">
                         <select id="pakke" name="pakke" autoComplete="off" className="rounded-full px-6 py-1 bg-text text-secondary w-full appearance-none cursor-pointer">
                             <option value="">Vælg pakke</option>
@@ -53,6 +55,7 @@ export default function Form() {
                             <option value="opblomstring">Opblomstring</option>
                             <option value="eviggroen">Eviggrøn</option>
                             <option value="form og flor">Form og Flor</option>
+                            <option value="ikke besluttet">Ikke besluttet</option>
                         </select>
                         <span className="absolute right-5 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">▼</span>
                     </div>
@@ -61,7 +64,7 @@ export default function Form() {
 
             {/* Row 3 - Anden information */}
             <div className="flex flex-col gap-2 w-full">
-                <H4>Anden information</H4>
+                <H3>Anden information</H3>
                 <textarea
                     id="information"
                     name="information"

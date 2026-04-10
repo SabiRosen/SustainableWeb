@@ -6,7 +6,7 @@ export default function Fordele({ fordele }) {
     if (!fordele) return null
 
     return (
-        <div className="flex flex-col items-center gap-10 w-full mt-8">
+        <div className="flex flex-col items-center gap-10 w-full mt-12 mb-18 ">
             <H2>Fordele</H2>
             <div 
                 className="flex flex-row justify-center w-full"
@@ -18,6 +18,7 @@ export default function Fordele({ fordele }) {
                             src={fordel.icon} 
                             alt={fordel.label} 
                             style={{ width: 'clamp(90px, 15vw, 175px)', height: 'clamp(90px, 15vw, 175px)' }}
+                            loading="lazy"
                         />
                         <P className="text-center">{fordel.label}</P>
                     </div>

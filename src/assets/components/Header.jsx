@@ -20,10 +20,13 @@ export default function Header() {
     <div className="sticky top-0 z-40 w-11/12 mx-auto mt-4">
 
       {/* Header bar */}
-      <header className="flex px-4 md:px-10 justify-between items-center bg-primary rounded-tr-[4.375rem] rounded-bl-[4.375rem] shadow-[4px_4px_4px_0_rgba(0,0,0,0.25)]">
+      <header className="flex px-5 md:px-10 justify-between items-center bg-primary rounded-tr-[4.375rem] rounded-bl-[4.375rem] shadow-[4px_4px_4px_0_rgba(0,0,0,0.25)]">
         
         <Link to="/">
-          <img src="/src/assets/logo.svg" alt="Logo" className="w-50 h-20 hover:scale-110 transition-transform" />
+          <>
+             <img src="/logo.svg" alt="Logo" className="hidden md:block w-50 h-20 hover:scale-110 transition-transform" loading="eager" fetchPriority="high"/>
+            <img src="/logo-small.svg" alt="Logo" className="block md:hidden w-25 px-3 py-3 hover:scale-110 transition-transform" loading="eager" fetchPriority="high"/>
+          </>
         </Link>
 
         {/* Desktop nav */}
@@ -35,12 +38,12 @@ export default function Header() {
               </H4>
             ))}
           </nav>
-          <img src="/src/assets/sun.svg" alt="Lightmode" className="w-8 h-8 cursor-pointer" />
+          <img src="/sun.svg" alt="Lightmode" className="w-8 h-8 cursor-pointer" loading="lazy"/>
         </div>
 
         {/* Mobil ikoner */}
         <div className="flex md:hidden items-center gap-4">
-          <img src="/src/assets/sun.svg" alt="Lightmode" className="w-8 h-8 cursor-pointer" />
+          <img src="/sun.svg" alt="Lightmode" className="w-8 h-8 cursor-pointer" loading="lazy"/>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <line

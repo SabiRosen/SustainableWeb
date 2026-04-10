@@ -1,13 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
-import DefaultPage from "./DefaultPage";
 import Layout from "./Layout";
-import Services from "./Services";
-import Cases from "./Cases";
-import OmOs from "./OmOs";
-import Kontakt from "./Kontakt";
 
-
+// Lazy-loaded pages
+const DefaultPage = lazy(() => import("./DefaultPage"));
+const Services = lazy(() => import("./Services"));
+const Cases = lazy(() => import("./Cases"));
+const OmOs = lazy(() => import("./OmOs"));
+const Kontakt = lazy(() => import("./Kontakt"));
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;

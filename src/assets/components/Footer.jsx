@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import H3 from "./typography/H3";
 import P from "./typography/P";
+import H1 from "./typography/H1";
+import H2 from "./typography/H2";
 
 export default function Footer() {
     return (
@@ -8,17 +10,17 @@ export default function Footer() {
             
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 items-center">
                 
-                <img src="/src/assets/logo.svg" alt="Logo" className="w-[clamp(19rem, 100vw, 57rem)] items-center"/>
+                <img src="/logo.svg" alt="Logo" className=" w-full max-w-[clamp(12rem,50vw,57rem)] items-center" loading="lazy"/>
 
                 <section className="flex flex-col space-y-10 mx-0 md:mx-20 text-left md:text-left">
                     <div>
-                        <H3>Telefontider</H3>
+                        <H2>Telefontider</H2>
                         <P>Hverdage: 8 - 16</P>
                         <P>Fredag: 8 - 14</P>
                     </div>
 
                     <div>
-                        <H3>Telefon nummer</H3>
+                        <H2>Telefon nummer</H2>
                         <P>
                             <Link to="tel:+4512345678" className="hover:underline">
                                 +45 12 34 56 78
@@ -27,7 +29,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <H3>Email</H3>
+                        <H2>Email</H2>
                         <P>
                             <Link to="mailto:Kontakt@webloom.dk" className="hover:underline">
                                 Kontakt@webloom.dk

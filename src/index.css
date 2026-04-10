@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./assets/fonts/Unbounded-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 @import "tailwindcss";
 
 @theme {
@@ -12,3 +18,31 @@
   --font-heading: 'Unbounded', sans-serif;
   --font-body: Arial, sans-serif;
 }
+
+@keyframes glowPulse {
+    0% {
+        box-shadow:
+        0 0 6px 1px rgba(255, 242, 177, 0.25),
+        0 0 16px 4px rgba(255, 242, 177, 0.12),
+        0 0 30px 8px rgba(255, 242, 177, 0.05);
+    }
+    50% {
+        box-shadow:
+        0 0 8px 2px rgba(255, 242, 177, 0.35),
+        0 0 20px 6px rgba(255, 242, 177, 0.18),
+        0 0 40px 10px rgba(255, 242, 177, 0.07);
+    }
+    100% {
+        box-shadow:
+        0 0 6px 1px rgba(255, 242, 177, 0.25),
+        0 0 16px 4px rgba(255, 242, 177, 0.12),
+        0 0 30px 8px rgba(255, 242, 177, 0.05);
+    } 
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
