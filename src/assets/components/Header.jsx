@@ -44,7 +44,12 @@ export default function Header() {
         {/* Mobil ikoner */}
         <div className="flex md:hidden items-center gap-4">
           <img src="/sun.svg" alt="Lightmode" className="w-8 h-8 cursor-pointer" loading="lazy"/>
-          <button onClick={() => setMenuOpen(!menuOpen)}>
+          <button 
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? "Luk menu" : "Åbn menu"}
+                aria-expanded={menuOpen}
+                aria-controls="mobile-menu"
+            >
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <line
                 x1="4" y1="8" x2="28" y2="8"
@@ -80,9 +85,10 @@ export default function Header() {
 
       {/* Mobil dropdown */}
       <div
-        className="md:hidden absolute right-0 w-1/2 bg-primary rounded-bl-[4.375rem] overflow-hidden transition-all duration-300 ease-in-out"
-        style={{ maxHeight: menuOpen ? "400px" : "0px" }}
-      >
+            id="mobile-menu"
+            className="md:hidden absolute right-0 w-1/2 bg-primary rounded-bl-[4.375rem] overflow-hidden transition-all duration-300 ease-in-out"
+            style={{ maxHeight: menuOpen ? "400px" : "0px" }}
+        >
         <nav className="flex flex-col gap-6 p-8">
           {navLinks.map(link => (
             <H3 key={link.to}>
