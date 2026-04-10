@@ -18,7 +18,7 @@ export default function Case({ caseData, flipped = false }) {
                         {caseData.id}.
                     </h1>
                     <div className="w-32 h-32 rounded-full border-2 border-text flex items-center justify-center overflow-hidden">
-                        <img src={caseData.logo} alt={caseData.name} className="w-full h-full object-contain p-2" loading="lazy"/>
+                        <img src={caseData.logo} alt={caseData.name} className="w-full h-full object-contain p-2" />
                     </div>
                 </div>
                 

@@ -3,6 +3,9 @@ import H2 from './assets/components/typography/H2'
 import H3 from './assets/components/typography/H3'
 import Form from './assets/components/Form'
 import H4 from './assets/components/typography/H4'
+import tlfIcon from './assets/icons/tlf.svg'
+import calenderIcon from './assets/icons/calender.svg'
+import mailIcon from './assets/icons/mail.svg'
 
 export default function Kontakt() {
     return (
@@ -33,14 +36,14 @@ export default function Kontakt() {
             {/* Middle section - contact info */}
             <div className="flex flex-col md:flex-row justify-around items-center md:items-start gap-6 md:gap-8 py-4 md:py-8">
                 <div className="flex flex-col items-center gap-4">
-                    <img src="/src/assets/icons/tlf.svg" alt="Telefon" 
+                    <img src={tlfIcon} alt="Telefon" 
                         style={{ width: 'clamp(60px, 10vw, 140px)', height: 'clamp(60px, 10vw, 140px)' }} 
                         loading="lazy"/>
                     <H3>Ring til os:</H3>
                     <H4>+45 12 34 56 78</H4>
                 </div>
                 <div className="flex flex-col items-center gap-4">
-                    <img src="/src/assets/icons/calender.svg" alt="Kalender"
+                    <img src={calenderIcon} alt="Kalender"
                         style={{ width: 'clamp(60px, 10vw, 140px)', height: 'clamp(60px, 10vw, 140px)' }} 
                         loading="lazy"/>
                     <H3>Hvornår arbejder vi?</H3>
@@ -48,7 +51,7 @@ export default function Kontakt() {
                     <H4>Fredag: 8-14</H4>
                 </div>
                 <div className="flex flex-col items-center gap-4">
-                    <img src="/src/assets/icons/mail.svg" alt="Email"
+                    <img src={mailIcon} alt="Email"
                         style={{ width: 'clamp(60px, 10vw, 140px)', height: 'clamp(60px, 10vw, 140px)' }} 
                         loading="lazy"/>
                     <H3>Skriv til os:</H3>

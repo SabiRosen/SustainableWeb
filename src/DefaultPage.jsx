@@ -13,6 +13,7 @@ import VisionCasesSection from "./assets/components/VisionCasesSection"
 import Focus from "./assets/components/Focus"
 import BeeTrail from "./assets/components/BeeTrail"
 import { Link } from "react-router-dom"
+import arrowIcon from './assets/icons/arrow.svg'
 
 export default function DefaultPage() {
     return (
@@ -41,7 +42,7 @@ export default function DefaultPage() {
                 <div className="flex w-full justify-end items-center gap-3 mt-auto md:mt-0 pb-10 md:py-0"
                     style={{ animation: 'float 3s ease-in-out infinite' }}>
                     <p className="text-lg font-medium text-text">Se hvad vi kan tilbyde</p>
-                    <img src="src/assets/icons/arrow.svg" alt="pilned" className="w-5" loading="lazy" />
+                    <img src={arrowIcon} alt="pilned" className="w-5" loading="lazy" />
                 </div>
 
             </div>

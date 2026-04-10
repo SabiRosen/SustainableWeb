@@ -3,6 +3,8 @@ import H2 from "./typography/H2"
 import P from "./typography/P"
 import CTA from "./CTA"
 import { Link } from "react-router-dom"
+import spireIcon from '../icons/spiren.svg'
+import evigronIcon from '../icons/eviggron.svg'
 
 export default function PackageSection() {
 
@@ -15,10 +17,11 @@ export default function PackageSection() {
         style={{ background: 'linear-gradient(to bottom right, #670627, #FFF2B1)' }}>
         <div className="flex flex-col items-center gap-[clamp(1rem,4vw,2.5rem)] p-[clamp(1.8rem,4vw,2.5rem)] rounded-tr-[6.25rem] rounded-bl-[6.25rem] bg-secondary w-full">
           <img 
-            src="/src/assets/icons/spiren.svg" 
-            alt="Spiren ikon" 
-            style={{ width: 'clamp(3rem, 8vw, 5rem)', height: 'clamp(3rem, 8vw, 5rem)' }} 
-            loading="lazy"/>
+              src={spireIcon}
+              alt="Spiren ikon" 
+              style={{ width: 'clamp(3rem, 8vw, 5rem)', height: 'clamp(3rem, 8vw, 5rem)' }} 
+              loading="lazy"
+            />
           <H2>SPIREN</H2>
           <P>Få en professionel hjemmeside bygget fra bunden, skræddersyet til din virksomhed og dine mål. Vi tager dig hele vejen fra idé til færdigt website.</P>
         </div>
@@ -28,11 +31,12 @@ export default function PackageSection() {
       <div className="p-1.25 rounded-tr-[6.25rem] rounded-bl-[6.25rem] w-full max-w-105"
         style={{ background: 'linear-gradient(to bottom right, #670627, #FFF2B1)' }}>
         <div className="flex flex-col items-center gap-[clamp(1rem,4vw,2.5rem)] p-[clamp(1.8rem,4vw,2.5rem)] rounded-tr-[6.25rem] rounded-bl-[6.25rem] bg-secondary w-full">
-          <img 
-                src="/src/assets/icons/eviggron.svg" 
-                alt="Eviggrøn ikon" 
-                style={{ width: 'clamp(3rem, 8vw, 5rem)', height: 'clamp(3rem, 8vw, 5rem)' }} 
-                loading="lazy"/>
+            <img 
+              src={evigronIcon}
+              alt="Eviggrøn ikon" 
+              style={{ width: 'clamp(3rem, 8vw, 5rem)', height: 'clamp(3rem, 8vw, 5rem)' }} 
+              loading="lazy"
+            />
           <H2>EVIGGRØN</H2>
           <P>Har du allerede en hjemmeside? Vi optimerer design, hastighed og synlighed, så du får en bedre performance og flere kunder ud af det, du allerede har.</P>
         </div>

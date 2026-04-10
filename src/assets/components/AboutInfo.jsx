@@ -1,11 +1,14 @@
 // src/assets/components/AboutInfo.jsx
 import H1 from './typography/H1'
 import P from './typography/P'
+import patriciaPhoto from '../images/patricia.webp'
+import sabiPhoto from '../images/sabi.webp'
+import caroPhoto from '../images/caro.webp'
 
 const teamMembers = [
-    { name: 'Patricia', role: 'UX/UI designer', photo: '/src/assets/images/patricia.webp' },
-    { name: 'Sabina', role: 'Webudvikler', photo: '/src/assets/images/sabi.webp' },
-    { name: 'Caroline', role: 'Projektleder', photo: '/src/assets/images/caro.webp' },
+    { name: 'Patricia', role: 'UX/UI designer', photo: patriciaPhoto },
+    { name: 'Sabina', role: 'Webudvikler', photo: sabiPhoto },
+    { name: 'Caroline', role: 'Projektleder', photo: caroPhoto },
 ]
 
 const bubbles = [

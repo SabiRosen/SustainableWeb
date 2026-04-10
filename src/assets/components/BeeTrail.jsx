@@ -1,5 +1,6 @@
 // src/assets/components/BeeTrail.jsx
 import { useEffect, useState, useRef } from "react"
+import beeIcon from '../icons/bee.svg'
 
 export default function BeeTrail() {
     const [progress, setProgress] = useState(0)
@@ -104,7 +105,7 @@ const generatePath = () => {
                 {/* Bee */}
                 {progress > 0 && progress < 1.1 && (
                     <image
-                        href="/src/assets/icons/bee.svg"
+                        href={beeIcon}
                         x={beeX - 25}
                         y={beeY - 25}
                         width="50"

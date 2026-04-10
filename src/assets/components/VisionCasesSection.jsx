@@ -4,6 +4,10 @@ import H1 from "./typography/H1"
 import P from "./typography/P"
 import CTA from "./CTA"
 import { Link } from "react-router-dom"
+import havblinkImg from '../images/havblink.svg'
+import kaffekandenImg from '../images/kaffekanden.svg'
+import stenoImg from '../images/steno.svg'
+import sistersImg from '../images/sisters.svg'
 
 export default function VisionCasesSection() {
     const navigate = useNavigate()
@@ -30,16 +34,16 @@ export default function VisionCasesSection() {
                 <H1>Cases</H1>
                 <div className="grid grid-cols-2 gap-[clamp(1rem,3vw,1.75rem)]">
                     {[
-                        { src: "/src/assets/images/havblink.svg", alt: "Havblink" },
-                        { src: "/src/assets/images/kaffekanden.svg", alt: "Kaffekanden" },
-                        { src: "/src/assets/images/steno.svg", alt: "Steno" },
-                        { src: "/src/assets/images/sisters.svg", alt: "Søstrene Grene" },
-                    ].map((img, index) => (
-                        <div key={index} className="rounded-full border border-text overflow-hidden"
-                            style={{ width: 'clamp(100px, 18vw, 175px)', height: 'clamp(100px, 18vw, 175px)' }}>
-                            <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy"/>
-                        </div>
-                    ))}
+                            { src: havblinkImg, alt: "Havblink" },
+                            { src: kaffekandenImg, alt: "Kaffekanden" },
+                            { src: stenoImg, alt: "Steno" },
+                            { src: sistersImg, alt: "Søstrene Grene" },
+                            ].map((img, index) => (
+                            <div key={index} className="rounded-full border border-text overflow-hidden"
+                                style={{ width: 'clamp(100px, 18vw, 175px)', height: 'clamp(100px, 18vw, 175px)' }}>
+                                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy"/>
+                            </div>
+                        ))}
                 </div>
         
                 <div className="place-self-center mt-auto">
