@@ -18,7 +18,7 @@ import arrowIcon from './assets/icons/arrow.svg'
 export default function DefaultPage() {
     return (
         <main>
-            <div className="w-full min-h-dvh md:h-screen px-8 pt-20 pb-16 flex flex-col justify-center md:justify-start items-center gap-12 md:gap-6">
+            <div className="w-full min-h-dvh md:min-h-screen px-8 pt-20 pb-16 flex flex-col justify-center md:justify-start items-center gap-12 md:gap-6">
     
                 {/* Animated logo */}
                 <Player
@@ -40,7 +40,7 @@ export default function DefaultPage() {
                     <CTA />
                 </Link>
 
-                <div className="flex w-full justify-end items-center gap-3 mt-auto md:mt-0 pb-10 md:py-0"
+                <div className="flex w-full justify-end items-center gap-3 mt-auto md:mt-10 pb-10 md:py-0"
                     style={{ animation: 'float 3s ease-in-out infinite' }}>
                     <p className="text-lg font-medium text-text">Se hvad vi kan tilbyde</p>
                     <img src={arrowIcon} alt="pilned" className="w-5" loading="lazy" />
