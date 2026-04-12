@@ -116,6 +116,7 @@ export default function Pakker({ onItemClick, selectedId, maxHeight = "400px" })
     }
   ];
 
+  //Pakker.jsx kalder funktionen når brrugeren klikker
   const handleClick = (item) => {
     if (onItemClick) {
       onItemClick(item);

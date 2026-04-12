@@ -18,7 +18,7 @@ import arrowIcon from './assets/icons/arrow.svg'
 export default function DefaultPage() {
     return (
         <main>
-            <div className="w-full min-h-screen px-8 pt-20 pb-16 flex flex-col justify-center md:justify-start items-center gap-12 md:gap-6">
+            <div className="w-full min-h-dvh md:h-screen px-8 pt-20 pb-16 flex flex-col justify-center md:justify-start items-center gap-12 md:gap-6">
     
                 {/* Animated logo */}
                 <Player

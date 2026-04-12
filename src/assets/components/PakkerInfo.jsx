@@ -5,7 +5,7 @@ import P from "./typography/P"
 import CTA from "./CTA"
 import { Link } from "react-router-dom"
 
-export default function PackageInfo({ package: pkg }) {
+export default function PakkerInfo({ package: pkg }) {
     if (!pkg) return (
         <div className="flex items-center justify-center h-full">
             <H3>Vælg en pakke for at se mere</H3>
@@ -22,8 +22,7 @@ export default function PackageInfo({ package: pkg }) {
             <div className="self-start mt-auto">
                 <Link to="/kontakt">
                     <CTA />
-                </Link>
-                
+                </Link> 
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ export default function Form() {
         <div className="flex flex-col gap-4 bg-primary rounded-4xl p-5 m-1 w-full">
             
             {/* Row 1 - Navn & Email */}
-            <div className="flex flex-row gap-6 w-full">
+            <div className="flex flex-col md:flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
                     <H3>Navn</H3>
                     <input
@@ -32,7 +32,7 @@ export default function Form() {
             </div>
 
             {/* Row 2 - Telefon & Pakke */}
-            <div className="flex flex-row gap-6 w-full">
+            <div className="flex flex-col md:flex-row gap-6 w-full">
                 <div className="flex flex-col gap-2 w-full">
                     <H3>Telefon nummer</H3>
                     <input

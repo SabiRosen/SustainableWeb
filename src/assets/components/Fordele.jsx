@@ -14,12 +14,19 @@ export default function Fordele({ fordele }) {
             >
                 {fordele.map((fordel, index) => (
                     <div key={index} className="flex flex-col items-center gap-4">
-                        <img 
-                            src={fordel.icon} 
-                            alt={fordel.label} 
-                            style={{ width: 'clamp(90px, 15vw, 175px)', height: 'clamp(90px, 15vw, 175px)' }}
-                            loading="lazy"
-                        />
+                        <div style={{ 
+                            width: 'clamp(80px, 20vw, 175px)', 
+                            height: 'clamp(80px, 20vw, 175px)',
+                            flexShrink: 0
+                        }}>
+                            <img 
+                                src={fordel.icon} 
+                                alt={fordel.label} 
+                                className="w-full h-full"
+                                style={{ objectFit: 'contain' }}
+                                loading="lazy"
+                            />
+                        </div>
                         <P className="text-center">{fordel.label}</P>
                     </div>
                 ))}

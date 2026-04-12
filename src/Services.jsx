@@ -4,11 +4,13 @@ import PakkerMobil from "./assets/components/PakkerMobil";
 import Fordele from "./assets/components/Fordele";
 import H1 from './assets/components/typography/H1';
 import packages from './data/packages';
-import PackageInfo from './assets/components/PakkerInfo';
+import PakkerInfo from './assets/components/PakkerInfo';
 
 export default function Services() {
   const [selectedPackage, setSelectedPackage] = useState(null);
 
+  // Services.jsx laver funktionen handleItemClick, 
+  // som opdaterer selectedPackage baseret på det klikede item. 
   function handleItemClick(item) {
     const pkg = packages.find(p => p.id === item.id)
     setSelectedPackage(pkg);
@@ -26,16 +28,19 @@ export default function Services() {
           selectedPackage={selectedPackage}
           onItemClick={handleItemClick}
         />
-        <PackageInfo package={selectedPackage} />
+        <PakkerInfo package={selectedPackage} />
       </div>
 
       {/* Desktop layout */}
       <div className="hidden md:flex flex-row items-start gap-10 w-full h-150">
         <div className="w-1/3 h-full">
-          <Pakker onItemClick={handleItemClick} selectedId={selectedPackage?.id} maxHeight="100%" />
+        {/* Services sender funktionen ned til Pakker som en prop */}
+            <Pakker onItemClick={handleItemClick} 
+            selectedId={selectedPackage?.id} 
+            maxHeight="100%" />
         </div>
         <div className="w-2/3 h-full">
-          <PackageInfo package={selectedPackage} />
+          <PakkerInfo package={selectedPackage} />
         </div>
       </div>
 
