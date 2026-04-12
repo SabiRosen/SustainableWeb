@@ -30,6 +30,7 @@ export default function DefaultPage() {
                         height: 'auto',
                         marginTop: 'clamp(-80px, -8vw, -20px)',
                         marginBottom: 'clamp(-80px, -8vw, -20px)',
+                        overflow: 'visible'
                     }}
                 />
 

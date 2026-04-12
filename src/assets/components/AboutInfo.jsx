@@ -14,7 +14,7 @@ const teamMembers = [
 const bubbles = [
     { text: '0,8 g co2 pr side visning' },
     { text: 'Tværfagligt team' },
-    { text: 'Værdier: Design med omtanke for både brugeren og klimaet' },
+    { text: 'Værdier: Design med omtanke' },
     { text: 'Mission: Langsigtede løsninger' },
 ]
 export default function AboutInfo() {
@@ -66,12 +66,12 @@ export default function AboutInfo() {
                 </div>
 
                 {/* Divider */}
-                <div className="border-t border-3 border-text mx-8 md:mx-16" />
+                <div className="border-t border-3 border-text-secondary mx-8 md:mx-16" />
 
                 {/* Bottom bubbles */}
                 <div className="flex flex-row flex-wrap items-center justify-around p-8 md:p-16 gap-8">
                     {bubbles.map((bubble, index) => (
-                        <div key={index} className="rounded-full bg-text flex items-center justify-center p-6"
+                        <div key={index} className="rounded-full bg-text-secondary flex items-center justify-center p-6"
                             style={{ width: 'clamp(120px, 18vw, 175px)', height: 'clamp(120px, 18vw, 175px)' }}>
                             <p className="text-center text-secondary" style={{ fontFamily: 'Arial, sans-serif', fontSize: 'clamp(12px, 1.5vw, 16px)' }}>
                                 {bubble.text}

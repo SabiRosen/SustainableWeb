@@ -14,6 +14,7 @@
   --color-background: #F9FAFB;
   --color-bg-gradient: linear-gradient(90deg,rgba(60, 3, 22, 1) 0%, rgba(103, 6, 39, 1) 100%);
   --color-text: #FEFAE0;
+  --color-text-secondary: #FFF2B1;
   
   --font-heading: 'Unbounded', sans-serif;
   --font-body: Arial, sans-serif;

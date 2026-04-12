@@ -8,7 +8,7 @@ import P from './typography/P'
 
 export default function Focus() {
   return (
-    <div className="flex flex-col items-center w-10/12 md:w-11/12 mx-auto my-16">
+    <div className="flex flex-col items-center w-10/12 md:w-11/12 mx-auto my-26 md:my-32">
       
       <H1>Fokuspunkter</H1>
 

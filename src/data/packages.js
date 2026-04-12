@@ -18,7 +18,7 @@ const packages = [
         price: '5.000 kr.',
         details: 'Spiren er vores pakkeløsning til dig, der vil starte fra bunden og gøre det rigtigt fra begyndelsen. Sammen omsætter vi dine idéer og visioner til en professionel hjemmeside fra struktur og design til lancering, der passer perfekt til din niche og forretning.',
         fordele: [
-            { icon: puzzleIcon, label: 'Skrædersyet løsning' },
+            { icon: puzzleIcon, label: 'Skræddersyet løsning' },
             { icon: wrenchIcon, label: 'Vedligeholdelse 2 år' },
             { icon: rocketIcon, label: 'Stærk performance' },
         ]

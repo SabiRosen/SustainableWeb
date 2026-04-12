@@ -21,7 +21,7 @@ const cases = [
         logo: stenoLogo,
         description: 'I løsningen for Steno Museet har vi udviklet en ekstern skærm til udstillingen "Hjerteakvariet", med storytellings historie. Derudover har vi haft særligt fokus på den visuelle formidling, så indholdet præsenteres klart, engagerende og let at forstå for de besøgende.',
         pakke: 'Form og flor',
-        url: 'https://interactivestorytelling.rosenkrantsstudio.dk'
+        url: 'https://interactivstorytelling.rosenkrantsstudio.dk/'
     },
     {
         id: 3,

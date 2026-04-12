@@ -1,17 +1,26 @@
 import { Link } from "react-router-dom";
-import H3 from "./typography/H3";
 import P from "./typography/P";
-import H1 from "./typography/H1";
 import H2 from "./typography/H2";
+import bcorpIcon from '../icons/cer-b.svg'
+import cleanCreativesIcon from '../icons/cer-cc.webp'
+import ecologiIcon from '../icons/cer-eco.svg'
 
 export default function Footer() {
     return (
         <footer className="flex flex-col w-full min-h-100 px-15 py-20 pb-3 bg-secondary items-center md:items-start ">
             
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 items-center">
-                
-                <img src="/logo.svg" alt="Logo" className=" w-full max-w-[clamp(12rem,50vw,57rem)] items-center" loading="lazy"/>
 
+                <div className="w-full flex flex-col justify-between gap-15 md:gap-20">
+                
+                    <img src="/logo.svg" alt="Logo" className=" w-full max-w-full items-center " loading="lazy"/>
+                    
+                    <div className="flex flex-row items-center mx-auto md:mx-0 gap-8 md:gap-15">
+                        <img src={bcorpIcon} alt="B Corp Certified" className="h-16 md:h-24 w-auto" loading="lazy"/>
+                        <img src={cleanCreativesIcon} alt="Clean Creatives Approved" className="h-16 md:h-24 w-auto" loading="lazy"/>
+                        <img src={ecologiIcon} alt="Ecologi" className="h-16 md:h-24 w-auto" loading="lazy"/>
+                    </div>
+                </div>
                 <section className="flex flex-col space-y-10 mx-0 md:mx-20 text-left md:text-left">
                     <div>
                         <H2>Telefontider</H2>
@@ -40,7 +49,7 @@ export default function Footer() {
                 </section>
             </div>
 
-            <P className="mt-10 text-center md:text-left self-center md:self-start">
+            <P className="mt-10 text-center md:text-left self-center">
                 © Webloom 2026</P>
 
         </footer>
